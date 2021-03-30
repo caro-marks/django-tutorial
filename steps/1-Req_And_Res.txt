@@ -1,0 +1,30 @@
+{% comment %} REQUESTS AND RESPONSES {% endcomment %}
+
+py -m venv overview => virtual environment
+
+./overview/Scripts/activate => activate the virtual environment
+
+py -m pip install django pandas requests psycopg2 => install libraries
+
+django-admin startproject arqabs => create project with above files
+
+{% comment %} arqabs -> root dir
+arqabs/manage.py -> command-line utility for adminstrative tasks
+arqabs/arqabs -> python package for project
+arqabs/arqabs/__init__.py -> empty file that tells Python that this dir should be a package
+arqabs/arqabs/settings.py ->settings/configurations for the project
+arqabs/arqabs/urls.py -> URLs declarations for the project
+arqabs/arqabs/asgi.py -> entry point for ASGI-compatible web servers
+arqabs/arqabs/wsgi.py -> entry point for Wsgi-compatible web servers {% endcomment %}
+
+py ./arqabs/manage.py runserver => run dev server
+
+cd ./arqabs => enter project dir
+
+py manage.py startapp retratos => create app
+
+-> {% comment %} Write first view at retratos/views.py {% endcomment %}
+-> {% comment %} Create URLconf with retratos/urls.py {% endcomment %}
+-> {% comment %} Point root URLconf at retratos.urls at arqabs/urls {% endcomment %}
+
+py manage.py runserver => run dev server

@@ -1,0 +1,32 @@
+{% comment %} MODELS AND THE ADMIN SITE {% endcomment %}
+
+py manage.py migrate => create database tables
+
+-> {% comment %} Create two models (Question, Choice) at retratos/models.py {% endcomment %}
+-> {% comment %} Include the retratos.apps.RetratosConfig in arqabs/settings.py INSTALLED_APPS {% endcomment %}
+
+py .\manage.py makemigrations retratos => stores models changes as a migration 
+
+
+py .\manage.py sqlmigrate retratos 0001 => To see whatSQL that migration would run
+
+py .\manage.py migrate => create model tables in database
+
+{% comment %} 
+
+3-step guide to making model changes
+
+-> change models (in retratos/models.py)
+-> py manage.py makemigrations (create migrations for those changes)
+-> py manage.py migrate (apply thos changes to the database)
+
+ {% endcomment %}
+
+py manage.py shell => invoke Python shell, for API interactions
+
+py manage.py createsuperuser => create a user who can login to the admin site
+
+py manage.py runserver => run dev server
+
+-> {% comment %} assure Question objects has an admin interface {% endcomment %}
+

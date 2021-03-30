@@ -1,0 +1,6 @@
+{% comment %} VIEWS AND TEMPLATES {% endcomment %}
+
+-> {% comment %} Add detail, results, and vote to views.py {% endcomment %}
+-> {% comment %} Wire new views into retratos.urls.py adding path() calss {% endcomment %}
+
+-> {% comment %} Edit index() view at views.py {% endcomment %}
