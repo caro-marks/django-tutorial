@@ -4,3 +4,8 @@
 -> {% comment %} Wire new views into retratos.urls.py adding path() calss {% endcomment %}
 
 -> {% comment %} Edit index() view at views.py {% endcomment %}
+
+-> {% comment %} Create templates folder at retratos dir {% endcomment %}
+-> {% comment %} Inside templates creates another retratos dir, and index.html {% endcomment %}
+-> {% comment %} Update retratos.views.py {% endcomment %}
+-> {% comment %} Create and Edit templates/detail.html {% endcomment %}
