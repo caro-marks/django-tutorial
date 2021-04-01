@@ -1,0 +1,3 @@
+{% comment %} FORMS AND GENERIC VIEWS {% endcomment %}
+
+-> {% comment %} Update retratos/detail.html {% endcomment %}
