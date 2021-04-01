@@ -1,9 +1,14 @@
 <!DOCTYPE html>
-
+{% load static %}
 <html lang="pt-br">
   <head>
-    <title>Novo Traço</title>
+    <title>Amanda Retratos</title>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'retratos/style.css' %}"
+    />
   </head>
   <body>
     {% if latest_question_list %}
